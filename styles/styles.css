@@ -5,15 +5,7 @@
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.title {
-  font-weight: 800;
-  color: #131318;
-}
-
-.org {
-  color: #ff5400;
+  box-sizing: border-box;
 }
 
 /* END  */
@@ -23,39 +15,58 @@ header {
   max-width: 1440px;
   margin: 0 auto;
 }
+/* end  */
 
+/* nav section styles */
 nav {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
 }
 
-.brand-title {
+.logo {
   display: flex;
   align-items: center;
-  font-size: 2.25rem;
+  gap: 15px;
 }
 
-.brand-title > h3 {
-  margin-left: 10px;
+.nav-title {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
 }
 
-nav ul {
+.nav-title .travel-color {
+  color: #FF5400;
+}
+
+nav>ul {
   display: flex;
-  padding-left: 0;
+  align-items: center;
+  gap: 45px;
 }
 
-nav li {
+nav>ul li {
   list-style: none;
-  margin-right: 3rem;
 }
 
-nav li a {
-  color: #424247;
-  font-size: 1rem;
+nav>ul li a {
   text-decoration: none;
+  color: #424247;
+  font-size: 18px;
   font-weight: 400;
+}
+
+nav>ul li a .home {
+  color: #FF5400;
+  font-weight: 700;
+}
+
+.menu-icon,
+.mobile-menu {
+  display: none;
 }
 /* header part End here*/
 
@@ -68,73 +79,134 @@ main {
 
 /* banner section start here  */
 .banner {
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/banner.png");
-    background-size: cover;
-    display: flex;
-    margin-top: 3rem;
-    align-items: center;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    padding: 10% 0;
-    border-radius: 16px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner.png");
+  background-size: cover;
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  padding: 10% 0;
+  border-radius: 16px;
 }
 
 .banner-title {
-    color: #FFF;
-    font-size: 4rem;
-    font-weight: 800;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .banner-description {
-    color: #FFF;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 24px 0 50px;
-    max-width: 670px;
-    text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 24px 0 50px;
+  max-width: 670px;
+  text-align: center;
 }
 
 .trip-selection {
-    display: flex;
-    gap: 25px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
-    padding: 1% 2%;
+  display: flex;
+  gap: 25px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1% 2%;
 }
 
 .trip-selection input {
-    color: rgba(19, 19, 24, 0.50);
-    width: 150px;
-    padding: 2% 1%;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.85rem;
+  color: rgba(19, 19, 24, 0.5);
+  width: 150px;
+  padding: 2% 1%;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
 }
 
 .trip-selection select {
-    width: 150px;
-    border: none;
-    border-radius: 8px;
-    padding: 2% 1%;
-    font-size: 0.85rem;
-    color: rgba(19, 19, 24, 0.50);
+  width: 150px;
+  border: none;
+  border-radius: 8px;
+  padding: 2% 1%;
+  font-size: 0.85rem;
+  color: rgba(19, 19, 24, 0.5);
 }
 
 .trip-selection option {
-    padding: 2% 1%;
+  padding: 2% 1%;
 }
 
 .search-btn {
-    border-radius: 8px;
-    background: #FF5400;
-    color: #FFFFFF;
-    border: none;
-    text-align: center;
-    width: 150px;
-    padding: 2% 1%;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.85r
+  border-radius: 8px;
+  background: #ff5400;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  width: 150px;
+  padding: 2% 1%;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85r;
 }
 
 /* banner section END here  */
+
+/* popular section start here */
+.popular-tours {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-tours-description {
+  width: 50%;
+}
+
+.popular-tours-title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.popular-tours-title > p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+}
+
+.popular-tours-description > h3 {
+  font-size: 2.5rem;
+}
+
+.popular-tours-description > p {
+  margin: 5% 0;
+}
+
+.popular-tours-img {
+  width: 40%;
+}
+
+.popular-tours-img > img {
+  width: 100%;
+}
+
+.popular-tours-description ul {
+  padding-left: 4%;
+}
+
+.popular-tours-description li {
+  margin-bottom: 3%;
+}
+
+.primary-btn {
+  border-radius: 8px;
+  background: #FF5400;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  border: none;
+  padding: 14px 34px;
+}
+/* popular section End here */

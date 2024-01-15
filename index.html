@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font awesome CDN Link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Let's Travel</title>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="styles/styles.css" />
@@ -12,26 +15,33 @@
   </head>
   <body>
     <header class="header">
+
       <nav>
-        <div class="brand-title title">
-          <img src="Images/logo.png" alt="" />
-          <h3>Let's <span class="org">Travel</span></h3>
+        <div class="logo">
+            <div class="icon">
+                <img class="logo-icon" src="Images/logo.png" alt="">
+            </div>
+            <h3 class="nav-title">Let's <span class="travel-color">Travel</span></h3>
         </div>
         <ul>
-          <li><a href="" class="org">Home</a></li>
-          <li><a href="">Packages</a></li>
-          <li><a href="">Testimonial</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+            <li><a href=""><span class="home">Home</span></a></li>
+            <li><a href="">Package</a></li>
+            <li><a href="">Testimonial</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
-      </nav>
+        <div class="mobile-menu">
+          <img class="menu-icon" src="Images/icons/bars.svg" alt="" />
+        </div>
+    </nav>
+
     </header>
     <main>
       <section class="banner">
-        <h2 class="banner-title">Explore Travel</h2>
+        <h2 class="banner-title">Explore Our Travel</h2>
         <p class="banner-description">
-          The World Travel Guide (Let's Travel) is the flagship digital consumer brand
-          within the Columbus Travel Media portfolio
+          The World Travel Guide (Let's Travel) is the flagship digital consumer
+          brand within the Columbus Travel Media portfolio
         </p>
         <div class="trip-selection">
           <input type="text" placeholder="Where go" />
@@ -39,8 +49,8 @@
             <option value="">When</option>
             <option>Maldives</option>
             <option>Indonesia</option>
-            <option>Srilanka</option>
-            <option>America</option>
+            <option>Sri Lanka</option>
+            <option>North America</option>
           </select>
           <select name="">
             <option value="">Select Type</option>
@@ -50,6 +60,41 @@
           <button class="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i> Find Now
           </button>
+        </div>
+      </section>
+      <!-- popular-tours part  -->
+      <section class="popular-tours">
+        <div class="popular-tours-description">
+          <h3 class="popular-tours-title">Our Popular Tours</h3>
+          <p>
+            Our journey commences in Cappadocia, a region renowned for its
+            otherworldly landscapes. Cappadocia's most iconic features are the
+            fairy chimneys:
+          </p>
+          <ul>
+            <li>
+              Kashmir: The valley of Kashmir is as rich with history and
+              political controversy as it is with culture and natural phenomena.
+            </li>
+            <li>
+              Indonesia: This national park was designated by UNESCO as a World
+              Heritage Site, the Tropical Rainforest Heritage of Sumatra, in
+              2004.
+            </li>
+            <li>
+              Island Wonders: Bali and extending to volcanic landscapes and
+              ancient temples.
+            </li>
+          </ul>
+          <p>
+            Our tour reaches its conclusion in Kusadasi, a charming coastal town
+            with stunning beaches and a lively atmosphere. It's the perfect
+            place to unwind
+          </p>
+          <button class="primary-btn">Read More</button>
+        </div>
+        <div class="popular-tours-img">
+          <img src="Images/popular.png" alt="" />
         </div>
       </section>
     </main>
