@@ -64,6 +64,7 @@
     .popular-tours-img {
         width: auto;
     }
+
     /* places section start here */
       .destination-place-description>p {
         width: auto;
@@ -77,9 +78,16 @@
     .bandarban {
         grid-column: 1/span 13;
     } 
+
+    /* why choose us section start here */
+    .why-choose-section{
+        margin-top: 100%;
+        width:100%
+    }
+    
     /* footer part */
     .footer-part {
-        margin-top: 45%;
+        margin-top: 5%;
     }
     .footer-description {
         width: 70%;
