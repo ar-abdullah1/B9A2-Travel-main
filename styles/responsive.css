@@ -84,6 +84,16 @@
         margin-top: 100%;
         width:100%
     }
+    /* bangladesh section start here  */
+    .bd {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bd-description,
+    .bd-video {
+        width: auto;
+    }
     /* newsletter section start here */
     .newsletter {
         width: 100%;
