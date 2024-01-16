@@ -77,4 +77,11 @@
     .bandarban {
         grid-column: 1/span 13;
     } 
+    /* footer part */
+    .footer-part {
+        margin-top: 45%;
+    }
+    .footer-description {
+        width: 70%;
+    }
 }
