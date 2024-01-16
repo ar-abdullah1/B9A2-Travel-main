@@ -1,21 +1,18 @@
+google 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* shared codes */
 * {
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* END  */
-
-/* header nav part start here*/
+/* header part  */
 header {
   max-width: 1440px;
   margin: 0 auto;
 }
-/* end  */
+/* end */
 
 /* nav section styles */
 nav {
@@ -68,7 +65,7 @@ nav > ul li a .home {
 .mobile-menu {
   display: none;
 }
-/* header part End here*/
+/* nav part End here*/
 
 /* main part start here  */
 main {
@@ -402,6 +399,97 @@ main {
 
 /* why choose section end here */
 
+ /* newsletter section start here */
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  max-width: 1170px;
+  margin: 100px auto;
+}
+
+.newsletter-input-field {
+  max-width: 474px;
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+  padding: 40px;
+}
+
+.newsletter hr {
+  border: 0;
+  padding: 1px;
+  background: rgba(19, 19, 24, 0.10);
+  margin-bottom: 24px;
+}
+
+.newsletter-input-title {
+  color: var(--secondary-color);
+  font-family: Mulish;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.newsletter-input-description {
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 10px 0 24px;
+}
+
+.newsletter-input-field form input {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-input-field form #btn {
+  color: #FFF;
+  background-color: #FF5400;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.newsletter-img {
+  max-width: 672px;
+  position: relative;
+}
+
+.newsletter-img .offer-card {
+  background-color: #FF5400;
+  width: 50%;
+  left: 340px;
+  transform: rotate(-40deg);
+  border-radius: 1rem;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+}
+
+.offer-card .link {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.offer-card .offer-title {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 800;
+}
+ /* newsletter section start here */
+
+
 /* Footer part start here  */
 footer {
   margin-top: 100px;
@@ -447,7 +535,7 @@ footer > hr {
   width: 75%;
 }
 
-.right {
+.copyright {
   color: #131318;
   font-size: 1rem;
   font-weight: 300;

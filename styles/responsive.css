@@ -84,7 +84,32 @@
         margin-top: 100%;
         width:100%
     }
-    
+    /* newsletter section start here */
+    .newsletter {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newsletter-img {
+        width: 100%;
+    }
+    .newsletter-img img {
+        width: 100%;
+    }
+    .newsletter-img .offer-card {
+        width: 60%;
+        right: 0px;
+        left: 167px;
+        bottom: 75px;
+        padding: 15px;
+    }
+    .offer-card .offer-title {
+        font-size: 1.25rem;
+    }
+    .offer-card .link {
+        font-size: 1rem;
+    }
+
     /* footer part */
     .footer-part {
         margin-top: 5%;
